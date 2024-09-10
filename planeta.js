@@ -1,5 +1,3 @@
-import { PlanetaJson } from './planeta.js';
+import PlanetaJson  from './planetas.json';
 
-const planetas = PlanetaJson;
-
-console.log(planetas);
+export const planetas = PlanetaJson;
