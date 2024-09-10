@@ -1,5 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { ScrollView, StyleSheet, View, Text, Image } from 'react-native';
+import { styles } from './styles.js';
+
 import Header from './src/components/Header';
 import {planetas} from './planeta.js';
 
@@ -74,43 +76,3 @@ export default function App() {
         </View>
     );
 }
-
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        backgroundColor: '#fff',
-    },
-    card: {
-        padding: 20,
-        margin: 10,
-        backgroundColor: '#f0f0f0',
-        borderRadius: 10,
-    },
-    titleArea: {
-        alignItems: 'center',
-    },
-    title: {
-        fontSize: 28,
-        fontWeight: 'bold',
-    },
-    image: {
-        width: 260,
-        height: 260,
-        margin: 10,
-        borderRadius: 10,   
-    },
-    informations: {
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        margin: 5,
-    },
-    description: {
-        fontSize: 18,
-        color: '#555',
-    },
-    value: {
-        fontSize: 18,
-        color: '#000',
-        fontWeight: 'bold',
-    },
-});
