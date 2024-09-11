@@ -5,37 +5,18 @@ export const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#fff',
     },
-    card: {
-        padding: 20,
-        margin: 10,
-        backgroundColor: '#f0f0f0',
-        borderRadius: 10,
-    },
-    titleArea: {
-        alignItems: 'center',
-    },
-    title: {
-        fontSize: 28,
-        fontWeight: 'bold',
-    },
-    image: {
-        width: 260,
-        height: 260,
-        margin: 10,
-        borderRadius: 10,   
-    },
-    informations: {
+    buttonsContainer: {
         flexDirection: 'row',
         justifyContent: 'space-between',
-        margin: 5,
+        margin: 10,       
     },
-    description: {
-        fontSize: 18,
-        color: '#555',
-    },
-    value: {
-        fontSize: 18,
-        color: '#000',
-        fontWeight: 'bold',
+    buttonText: {
+        color: 'black',
+        fontSize: 16,
+        backgroundColor: 'white',
+        borderColor: 'black',
+        borderWidth: 1,
+        padding: 10,
+        borderRadius: 5,
     },
 })
