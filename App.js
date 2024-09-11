@@ -1,6 +1,6 @@
 import React from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { ScrollView, View } from 'react-native';
+import { FlatList, View } from 'react-native';
 import { styles } from './styles.js';
 
 import Header from './src/components/Header';
@@ -14,13 +14,20 @@ export default function App() {
             <StatusBar style="auto" />
 
             <Header />
+
+            <FlatList>
+                data={planetas}
+                renderItem={({ item }) => (
+                    <Planet data={item} />
+                )}
+                keyExtractor={item => item.id}
+            </FlatList>
             
-            <ScrollView>
-                {/* Aqui vai o conteúdo da aplicação */}
+            {/* <ScrollView>
                 {planetas && planetas.map((data) => (
                     <Planet key={data.id} data={data} />
                 ))}
-            </ScrollView>
+            </ScrollView> */}
         </View>
     );
 }
